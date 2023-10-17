@@ -1,40 +1,11 @@
-pipeline
-{
-    agent
-    any
-    stages
-{
-stage('Check
+pipeline {
+    agent any
 
-Validate'){steps{ echo 'Validating the Program'
-
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
 }
-
-}
-
-stage('Compilation'){
-
-steps{
-
-echo 'Compiling the Program'
-
-}
-
-}
-
-stage('Installation'){ steps{
-
-echo 'Installing the Program
-
-}
-
-}
-
-
-stage('Deploy' ){steps{
-
-echo 'Deploying the Program'
-}
-}
-      }
-      }
