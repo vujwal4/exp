@@ -1,6 +1,8 @@
-public class Main
+#include <stdio.h>
+
+int main()
 {
-	public static void main(String[] args) {
-		System.out.println("Hello World");
-	}
+    printf("Hello World");
+
+    return 0;
 }
