@@ -1,7 +1,11 @@
-#include<stdio.h>
+pipeline {
+    agent any
 
-int main()
-{
-    printf("Hello World");
-    return 0;
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
 }
